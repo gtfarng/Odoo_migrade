@@ -1,0 +1,11 @@
+prefix=/opt/bitnami/common
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: neon
+Description: HTTP/WebDAV client library
+Version: 0.30.1
+Libs: -L${libdir} -lneon 
+Libs.private:  -lz -L/opt/bitnami/common/lib -lssl -lcrypto  -lexpat
+Cflags: -I${includedir}/neon 

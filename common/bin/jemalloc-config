@@ -1,0 +1,79 @@
+#!/bin/sh
+
+usage() {
+	cat <<EOF
+Usage:
+  /opt/bitnami/common/bin/jemalloc-config <option>
+Options:
+  --help | -h  : Print usage.
+  --version    : Print jemalloc version.
+  --revision   : Print shared library revision number.
+  --config     : Print configure options used to build jemalloc.
+  --prefix     : Print installation directory prefix.
+  --bindir     : Print binary installation directory.
+  --datadir    : Print data installation directory.
+  --includedir : Print include installation directory.
+  --libdir     : Print library installation directory.
+  --mandir     : Print manual page installation directory.
+  --cc         : Print compiler used to build jemalloc.
+  --cflags     : Print compiler flags used to build jemalloc.
+  --cppflags   : Print preprocessor flags used to build jemalloc.
+  --ldflags    : Print library flags used to build jemalloc.
+  --libs       : Print libraries jemalloc was linked against.
+EOF
+}
+
+prefix="/opt/bitnami/common"
+exec_prefix="/opt/bitnami/common"
+
+case "$1" in
+--help | -h)
+	usage
+	exit 0
+	;;
+--version)
+	echo "4.2.1-0-g0"
+	;;
+--revision)
+	echo "2"
+	;;
+--config)
+	echo "--prefix=/opt/bitnami/common --with-version=4.2.1-0-g0 CC=gcc 'CFLAGS=-I/opt/bitnami/common/include -fPIC -m64' 'LDFLAGS=-L/opt/bitnami/python/lib -L/bitnami/djangostack-linux-x64/output/sqlite/lib -L/opt/bitnami/common/lib' 'CPPFLAGS=-DAI_ADDRCONFIG=0 -I/opt/bitnami/common/include -I/bitnami/djangostack-linux-x64/output/sqlite/include -I/opt/bitnami/common/include/sasl -I/opt/bitnami/common/include'"
+	;;
+--prefix)
+	echo "/opt/bitnami/common"
+	;;
+--bindir)
+	echo "/opt/bitnami/common/bin"
+	;;
+--datadir)
+	echo "/opt/bitnami/common/share"
+	;;
+--includedir)
+	echo "/opt/bitnami/common/include"
+	;;
+--libdir)
+	echo "/opt/bitnami/common/lib"
+	;;
+--mandir)
+	echo "/opt/bitnami/common/share/man"
+	;;
+--cc)
+	echo "gcc"
+	;;
+--cflags)
+	echo "-I/opt/bitnami/common/include -fPIC -m64 -fvisibility=hidden"
+	;;
+--cppflags)
+	echo "-DAI_ADDRCONFIG=0 -I/opt/bitnami/common/include  -I/bitnami/djangostack-linux-x64/output/sqlite/include -I/opt/bitnami/common/include/sasl -I/opt/bitnami/common/include -D_GNU_SOURCE -D_REENTRANT"
+	;;
+--ldflags)
+	echo "-L/opt/bitnami/python/lib -L/bitnami/djangostack-linux-x64/output/sqlite/lib -L/opt/bitnami/common/lib "
+	;;
+--libs)
+	echo "-lrt  -lpthread"
+	;;
+*)
+	usage
+	exit 1
+esac

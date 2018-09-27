@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//PYVOBJECT//NONSGML Version 1//EN
+BEGIN:VEVENT
+UID:20180924T044454Z-38312@ERP
+DTSTART:20180924T040000Z
+DTEND:20180924T040000Z
+ATTENDEE:MAILTO:puchong@phuketlotustechnology.com
+ATTENDEE:MAILTO:saowanee@phuketlotustechnology.com
+ATTENDEE:MAILTO:thanadet@phuketlotustechnology.com
+CREATED:20180924T044454Z
+DESCRIPTION:ส่ง Email ให้แล้ว  ดำเนินก
+ ารต่อในส่วนของการวางบิล แ
+ ละเก็บ เช็ค 
+SUMMARY:ส่งรายการ STOCK  CCTV ให้ ALANCO
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,8 @@
+prefix=/bitnami/djangostack-linux-x64/output/python
+
+Name: Pycairo
+Description: Python bindings for cairo
+Version: 1.8.4
+Requires: cairo
+Cflags: -I${prefix}/include/pycairo
+Libs:

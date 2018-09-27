@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# Restart getty services to ensure welcome message is shown
+# Copyright 2017 Bitnami.com All Rights Reserved
+#
+
+. /opt/bitnami/scripts/init/functions
+
+run_once_per_boot_check "welcome_message_reload"
+if [ $? -eq 0 ]; then
+  for TTY in tty1 tty2 tty3 tty4 tty5 tty6 ; do
+    service getty@${TTY} restart
+  done
+fi

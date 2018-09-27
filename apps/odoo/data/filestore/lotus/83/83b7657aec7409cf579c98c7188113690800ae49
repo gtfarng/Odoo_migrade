@@ -1,0 +1,26 @@
+
+.o_web_client .o_lunch .o_lunch_last_orders {
+  width: 100%;
+}
+.o_web_client .o_lunch .o_lunch_last_orders .o_lunch_vignette {
+  padding: 5px 0;
+}
+.o_web_client .o_lunch .o_lunch_last_orders .o_lunch_vignette:before,
+.o_web_client .o_lunch .o_lunch_last_orders .o_lunch_vignette:after {
+  content: " ";
+  display: table;
+}
+.o_web_client .o_lunch .o_lunch_last_orders .o_lunch_vignette:after {
+  clear: both;
+}
+.o_web_client .o_lunch .o_lunch_last_orders .o_lunch_vignette:before,
+.o_web_client .o_lunch .o_lunch_last_orders .o_lunch_vignette:after {
+  content: " ";
+  display: table;
+}
+.o_web_client .o_lunch .o_lunch_last_orders .o_lunch_vignette:after {
+  clear: both;
+}
+.o_web_client .o_lunch .o_lunch_last_orders .o_lunch_vignette + .o_lunch_vignette {
+  border-top: 1px solid #e2e2e0;
+}

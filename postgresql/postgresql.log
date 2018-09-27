@@ -1,0 +1,9 @@
+LOG:  database system was shut down at 2017-06-28 11:48:12 UTC
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "lotus" does not exist
+ERROR:  role "openpg" does not exist
+STATEMENT:  REVOKE ALL ON SCHEMA public FROM openpg;
+ERROR:  role "openpg" does not exist
+STATEMENT:  GRANT ALL ON SCHEMA public TO openpg;

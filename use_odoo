@@ -1,0 +1,8 @@
+#!/bin/sh
+
+PATH="/opt/bitnami/apps/odoo/node_modules/less/bin:/opt/bitnami/apps/odoo/node_modules/less-plugin-clean-css/bin:/opt/bitnami/apps/odoo/bin:/opt/bitnami/nodejs/bin:/opt/bitnami/python/bin:/opt/bitnami/postgresql/bin:/opt/bitnami/apache2/bin:/opt/bitnami/sqlite/bin:/opt/bitnami/common/bin:$PATH"
+BITNAMI_ROOT="/opt/bitnami"
+export BITNAMI_ROOT
+
+
+exec /bin/bash --noprofile --norc

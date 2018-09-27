@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//PYVOBJECT//NONSGML Version 1//EN
+BEGIN:VEVENT
+UID:20180917T092118Z-52337@ERP
+DTSTART:20180918T070000Z
+DTEND:20180918T110000Z
+ATTENDEE:MAILTO:puchong@phuketlotustechnology.com
+ATTENDEE:MAILTO:anek@phuketlotustechnology.com
+ATTENDEE:MAILTO:saowanee@phuketlotustechnology.com
+ATTENDEE:MAILTO:thanadet@phuketlotustechnology.com
+CREATED:20180917T092118Z
+DESCRIPTION:เข้าติดตั้งระบบ  Mifare   พร
+ ้อมทั้ง  ดูเรื่อง Access control   A B C แ
+ ละ D    ผมแจ้งต้นให้เตรียม คอ
+ ม และ เปิด Port แล้วครับ   เบอร์
+ ติดต่อ ต้น   083 639 0830
+SUMMARY:Oceana
+END:VEVENT
+END:VCALENDAR

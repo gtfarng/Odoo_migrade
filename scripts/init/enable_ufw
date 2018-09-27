@@ -1,0 +1,19 @@
+#!/bin/sh
+#!/bin/sh
+# 
+# UFW enable script
+# Copyright 2017 Bitnami.com All Rights Reserved
+#
+
+. /opt/bitnami/scripts/init/functions
+
+if ( run_once_check "ufw_enable" ); then
+
+  ufw enable
+  for PORT in 22 443 80 ; do
+    # ufw requires from:to as format for port ranges
+    PORT=`echo $PORT | sed "s/-/:/"`
+    ufw allow $PORT/tcp
+  done
+  
+fi

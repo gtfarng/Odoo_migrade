@@ -1,0 +1,4 @@
+[1;33m
+[1m*** You can access the application at http://@@HOSTNAME@@ ***
+[1m*** The default username and password is 'user@example.com' and 'bitnami'. ***
+[1m*** You can find out more at https://docs.bitnami.com/virtual-machine/apps/odoo/ ***

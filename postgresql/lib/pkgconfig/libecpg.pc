@@ -1,0 +1,9 @@
+Name: libecpg
+Description: PostgreSQL libecpg library
+Url: http://www.postgresql.org/
+Version: 9.6.3
+Requires: 
+Requires.private: libpq libpgtypes
+Cflags: -I/bitnami/djangostack-linux-x64/output/postgresql/include
+Libs: -L/bitnami/djangostack-linux-x64/output/postgresql/lib -lecpg
+Libs.private: -L/bitnami/djangostack-linux-x64/output/common/lib -L/bitnami/djangostack-linux-x64/output/python/lib -L/bitnami/djangostack-linux-x64/output/sqlite/lib -lm

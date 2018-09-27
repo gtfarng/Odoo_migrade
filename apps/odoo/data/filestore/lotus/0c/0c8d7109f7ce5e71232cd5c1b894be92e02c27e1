@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//PYVOBJECT//NONSGML Version 1//EN
+BEGIN:VEVENT
+UID:20180927T025358Z-92116@ERP
+DTSTART;VALUE=DATE:20180927
+DTEND;VALUE=DATE:20180930
+ATTENDEE:MAILTO:puchong@phuketlotustechnology.com
+ATTENDEE:MAILTO:anek@phuketlotustechnology.com
+ATTENDEE:MAILTO:saowanee@phuketlotustechnology.com
+ATTENDEE:MAILTO:thanadet@phuketlotustechnology.com
+CREATED:20180927T025358Z
+DESCRIPTION:casuarina shore\nคุณแอ๊ะ   \n\nผมขอเ
+ ป็นวันที่  27-30 /  09 /  2561  ( พฤหัส - เ
+ สาร์ )   ทางทีมช่างรบกวน ขอจ
+ ัดตาราง  รอบเดียว ครบทั้ง ต
+ ึก C และ D   เลยน่ะครับ   \n\nซึ่ง
+ จะรวมทั้งหมดเป็น 8 ห้อง  ครั
+ บ  \n\nขอบคุณครับ \n
+LOCATION:casuarina shore
+SUMMARY:Run cable
+END:VEVENT
+END:VCALENDAR

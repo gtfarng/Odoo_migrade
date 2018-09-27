@@ -1,0 +1,3 @@
+#!/bin/sh
+. /opt/bitnami/postgresql/bin/setenv.sh
+exec /opt/bitnami/postgresql/bin/pg_ctl.bin -l /opt/bitnami/postgresql/postgresql.log  "$@"

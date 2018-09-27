@@ -1,0 +1,25 @@
+small
+[Thu Sep 27 04:23:12 UTC 2018] Regenerating keys for odoo
+[Thu Sep 27 04:23:19 UTC 2018] Regenerating keys for odoo finished
+[Thu Sep 27 04:23:19 UTC 2018] Finished regenerating keys
+Not setting Bitnami application passwords
+[Thu Sep 27 04:23:19 UTC 2018] Setting up password for user bitnami
+Enter new UNIX password: Retype new UNIX password: passwd: password updated successfully
+[Thu Sep 27 04:23:19 UTC 2018] Finished setting system user password
+Firewall is active and enabled on system startup
+Rule added
+Rule added (v6)
+Rule added
+Rule added (v6)
+Rule added
+Rule added (v6)
+Creating SSH2 RSA key; this may take some time ...
+2048 75:9e:f2:67:70:52:88:74:98:48:ce:74:1e:54:44:b1 /etc/ssh/ssh_host_rsa_key.pub (RSA)
+Creating SSH2 DSA key; this may take some time ...
+1024 e5:6e:d4:a1:9c:6f:57:b5:fd:4f:fa:09:3a:ef:3b:18 /etc/ssh/ssh_host_dsa_key.pub (DSA)
+Creating SSH2 ECDSA key; this may take some time ...
+256 bf:07:1b:5a:90:bc:7e:da:e1:d9:87:ba:48:49:90:47 /etc/ssh/ssh_host_ecdsa_key.pub (ECDSA)
+Creating SSH2 ED25519 key; this may take some time ...
+256 95:50:b4:7b:45:2c:42:ca:c6:ea:49:6a:f1:aa:50:3e /etc/ssh/ssh_host_ed25519_key.pub (ED25519)
+insserv: warning: current start runlevel(s) (empty) of script `ssh' overrides LSB defaults (2 3 4 5).
+insserv: warning: current stop runlevel(s) (2 3 4 5) of script `ssh' overrides LSB defaults (empty).

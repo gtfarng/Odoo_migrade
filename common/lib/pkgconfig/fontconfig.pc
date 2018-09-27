@@ -1,0 +1,11 @@
+prefix=/opt/bitnami/common
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Fontconfig
+Description: Font configuration and customization library
+Version: 2.6.0
+Libs: -L${libdir} -lfontconfig
+Libs.private: -lexpat -L/opt/bitnami/common/lib -lfreetype -lz -lbz2
+Cflags: -I${includedir}

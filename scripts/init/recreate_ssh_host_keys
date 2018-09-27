@@ -1,0 +1,42 @@
+#!/bin/sh
+# 
+# Re-create keys for SSH.
+# Copyright 2017 Bitnami.com All Rights Reserved
+#
+
+. /opt/bitnami/scripts/init/functions
+
+# when run with --force option, recreate the keys regardless of the flag
+if [ "x$1" != "x--force" ] ; then
+    run_once_globally_check "recreate_ssh_keys"
+    if [ $? -ne 0 ]; then
+        exit 0
+    fi
+fi
+
+# use service command if available
+if [ -f "/usr/sbin/service" ] ; then
+    /usr/sbin/service ssh stop
+elif [ -f "/etc/init.d/sshd" ] ; then
+    /etc/init.d/sshd stop
+else
+    /etc/init.d/ssh stop
+fi
+
+rm -f /etc/ssh/ssh_host*key*
+dpkg-reconfigure -fnoninteractive -pcritical openssh-server
+
+
+# skip start up if ssh service is disabled (i.e debian vms)
+if [ "x`systemctl is-enabled ssh 2> /dev/null`" = "xdisabled" ]; then
+  exit 0
+fi
+
+# use service command if available
+if [ -f "/usr/sbin/service" ] ; then
+    /usr/sbin/service ssh start
+elif [ -f "/etc/init.d/sshd" ] ; then
+    /etc/init.d/sshd start
+else
+    /etc/init.d/ssh start
+fi

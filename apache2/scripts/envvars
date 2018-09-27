@@ -1,0 +1,2 @@
+export PYTHONHOME=/opt/bitnami/python
+export LD_LIBRARY_PATH=/opt/bitnami/python/lib:$LD_LIBRARY_PATH

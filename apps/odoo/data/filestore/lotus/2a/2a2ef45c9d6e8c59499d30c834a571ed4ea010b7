@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//PYVOBJECT//NONSGML Version 1//EN
+BEGIN:VEVENT
+UID:20180914T085545Z-67542@ERP
+DTSTART:20180917T033000Z
+DTEND:20180917T043000Z
+ATTENDEE:MAILTO:puchong@phuketlotustechnology.com
+ATTENDEE:MAILTO:anek@phuketlotustechnology.com
+ATTENDEE:MAILTO:saowanee@phuketlotustechnology.com
+ATTENDEE:MAILTO:thanadet@phuketlotustechnology.com
+CREATED:20180914T085545Z
+DESCRIPTION:แถว โรงแรม อังสนา ลากู
+ น่า\nเลขที่ 115/10\nติดต่อคุณจัน
+ ทร์ 0836415460\n\nตรวจสอบการติดตั้
+ ง IPTV \n\nเก็บเงินค่าบริการหน้
+ างานเลยครับ
+SUMMARY:ตรวจสอบระบบ IP-TV
+END:VEVENT
+END:VCALENDAR

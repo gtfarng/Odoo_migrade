@@ -1,0 +1,9 @@
+Name: libpq
+Description: PostgreSQL libpq library
+Url: http://www.postgresql.org/
+Version: 9.6.3
+Requires: 
+Requires.private: 
+Cflags: -I/bitnami/djangostack-linux-x64/output/postgresql/include
+Libs: -L/bitnami/djangostack-linux-x64/output/postgresql/lib -lpq
+Libs.private: -L/bitnami/djangostack-linux-x64/output/common/lib -L/bitnami/djangostack-linux-x64/output/python/lib -L/bitnami/djangostack-linux-x64/output/sqlite/lib -lssl -lcrypto -lcrypt

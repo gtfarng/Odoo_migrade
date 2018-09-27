@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//PYVOBJECT//NONSGML Version 1//EN
+BEGIN:VEVENT
+UID:20180920T025019Z-55649@ERP
+DTSTART:20180919T020000Z
+DTEND:20180919T021500Z
+ATTENDEE:MAILTO:puchong@phuketlotustechnology.com
+ATTENDEE:MAILTO:saowanee@phuketlotustechnology.com
+ATTENDEE:MAILTO:thanadet@phuketlotustechnology.com
+CREATED:20180920T025019Z
+DESCRIPTION:รอคอนเฟิมการส่งของอี
+ กครั้ง ทาง Email         ประกันให้เ
+ ริ่มจากวันแรก ที่ติดตั้ง    
+  
+SUMMARY:CCTV of Alanco 
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//PYVOBJECT//NONSGML Version 1//EN
+BEGIN:VEVENT
+UID:20180917T091819Z-20055@ERP
+DTSTART:20180918T020000Z
+DTEND:20180918T050000Z
+ATTENDEE:MAILTO:puchong@phuketlotustechnology.com
+ATTENDEE:MAILTO:
+ATTENDEE:MAILTO:anek@phuketlotustechnology.com
+ATTENDEE:MAILTO:saowanee@phuketlotustechnology.com
+CREATED:20180917T091819Z
+DESCRIPTION:Upgrade internet Router 101  ซึ่งติดตั้ง
+ ไว้ที่ห้อง 465 (เดอะกรีน กอล์
+ ฟ ) จาก Stand  wifi เป็น Fiber optic ค่ะ
+SUMMARY:The green Golf
+END:VEVENT
+END:VCALENDAR

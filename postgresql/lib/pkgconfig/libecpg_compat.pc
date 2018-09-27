@@ -1,0 +1,9 @@
+Name: libecpg_compat
+Description: PostgreSQL libecpg_compat library
+Url: http://www.postgresql.org/
+Version: 9.6.3
+Requires: 
+Requires.private: libecpg libpgtypes
+Cflags: -I/bitnami/djangostack-linux-x64/output/postgresql/include
+Libs: -L/bitnami/djangostack-linux-x64/output/postgresql/lib -lecpg_compat
+Libs.private: -L/bitnami/djangostack-linux-x64/output/common/lib -L/bitnami/djangostack-linux-x64/output/python/lib -L/bitnami/djangostack-linux-x64/output/sqlite/lib -lpq -lm

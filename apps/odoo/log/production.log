@@ -1,0 +1,601 @@
+2018-09-27 04:23:31,526 1104 INFO ? odoo: Odoo version 10.0-20170615
+2018-09-27 04:23:31,527 1104 INFO ? odoo: Using configuration file at /opt/bitnami/apps/odoo/conf/odoo-server.conf
+2018-09-27 04:23:31,527 1104 INFO ? odoo: addons paths: ['/opt/bitnami/apps/odoo/data/addons/10.0', u'/opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons']
+2018-09-27 04:23:31,528 1104 INFO ? odoo: database: bn_odoo@127.0.0.1:5432
+2018-09-27 04:23:31,858 1104 INFO ? odoo.service.server: Evented Service (longpolling) running on 0.0.0.0:8072
+2018-09-27 04:23:51,265 1123 INFO ? odoo: Odoo version 10.0-20170615
+2018-09-27 04:23:51,266 1123 INFO ? odoo: Using configuration file at /opt/bitnami/apps/odoo/conf/odoo-server.conf
+2018-09-27 04:23:51,266 1123 INFO ? odoo: addons paths: ['/opt/bitnami/apps/odoo/data/addons/10.0', u'/opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons']
+2018-09-27 04:23:51,266 1123 INFO ? odoo: database: bn_odoo@127.0.0.1:5432
+2018-09-27 04:23:51,588 1123 INFO bitnami_odoo odoo.modules.loading: loading 1 modules...
+2018-09-27 04:23:52,060 1123 INFO bitnami_odoo odoo.modules.loading: 1 modules loaded in 0.47s, 0 queries
+2018-09-27 04:23:52,512 1123 INFO bitnami_odoo odoo.modules.loading: loading 25 modules...
+2018-09-27 04:23:52,650 1123 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres
+2018-09-27 04:23:53,432 1123 INFO bitnami_odoo odoo.addons.report.models.report: You need Wkhtmltopdf to print a pdf version of the reports.
+2018-09-27 04:23:53,714 1123 INFO bitnami_odoo odoo.modules.loading: 25 modules loaded in 1.20s, 0 queries
+2018-09-27 04:23:54,065 1123 INFO bitnami_odoo odoo.modules.loading: Modules loaded.
+2018-09-27 04:24:51,735 1123 INFO bitnami_odoo odoo.addons.base.ir.ir_attachment: filestore gc 0 checked, 0 removed
+2018-09-27 04:24:51,836 1123 INFO bitnami_odoo odoo.addons.base.ir.ir_autovacuum: GC'd 0 user log entries
+2018-09-27 04:24:51,958 1123 INFO bitnami_odoo odoo.addons.base.ir.ir_mail_server: Mail delivery failed via SMTP server 'localhost'.
+error: 111
+Connection refused
+2018-09-27 04:24:51,959 1123 ERROR bitnami_odoo odoo.addons.mail.models.mail_mail: failed sending mail (id: 1) due to Mail Delivery Failed
+Mail delivery failed via SMTP server 'localhost'.
+error: 111
+Connection refused
+Traceback (most recent call last):
+  File "/opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/mail/models/mail_mail.py", line 278, in send
+    res = IrMailServer.send_email(msg, mail_server_id=mail.mail_server_id.id)
+  File "/opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/base/ir/ir_mail_server.py", line 464, in send_email
+    raise MailDeliveryException(_("Mail Delivery Failed"), msg)
+MailDeliveryException: (u'Mail Delivery Failed', u"Mail delivery failed via SMTP server 'localhost'.\nerror: 111\nConnection refused")
+2018-09-27 06:31:25,284 1104 INFO ? odoo.addons.report.models.report: You need Wkhtmltopdf to print a pdf version of the reports.
+2018-09-27 06:31:26,382 1104 INFO ? odoo.http: HTTP Configuring static files
+2018-09-27 06:31:26,429 1104 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres
+2018-09-27 06:31:26,512 1104 INFO bitnami_odoo odoo.modules.loading: loading 1 modules...
+2018-09-27 06:31:26,535 1104 INFO bitnami_odoo odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries
+2018-09-27 06:31:26,552 1104 INFO bitnami_odoo odoo.modules.loading: loading 25 modules...
+2018-09-27 06:31:26,628 1104 INFO bitnami_odoo odoo.modules.loading: 25 modules loaded in 0.08s, 0 queries
+2018-09-27 06:31:26,866 1104 INFO bitnami_odoo odoo.modules.loading: Modules loaded.
+2018-09-27 06:31:26,871 1104 INFO bitnami_odoo odoo.addons.base.ir.ir_http: Generating routing map
+2018-09-27 06:49:44,203 1104 INFO lotus odoo.modules.loading: loading 1 modules...
+2018-09-27 06:49:44,234 1104 INFO lotus odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries
+2018-09-27 06:49:44,463 1104 INFO lotus odoo.modules.loading: loading 59 modules...
+2018-09-27 06:49:44,855 1104 INFO lotus odoo.modules.loading: 59 modules loaded in 0.39s, 0 queries
+2018-09-27 06:49:45,821 1104 INFO lotus odoo.modules.loading: Modules loaded.
+2018-09-27 06:49:45,885 1104 INFO lotus odoo.service.db: RESTORE DB: lotus
+2018-09-27 06:50:18,928 1104 INFO ? odoo.http: Generating nondb routing
+2018-09-27 06:50:18,986 1104 INFO lotus odoo.addons.base.ir.ir_http: Generating routing map
+2018-09-27 06:50:19,944 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [661]
+2018-09-27 06:50:21,550 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1399]
+2018-09-27 06:50:22,137 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [663]
+2018-09-27 06:50:22,205 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1400]
+2018-09-27 06:50:32,482 1104 INFO lotus odoo.addons.base.res.res_users: Login failed for db:lotus login:thanadet.sut@gmail.com
+2018-09-27 06:50:44,634 1104 INFO lotus odoo.addons.base.res.res_users: Login failed for db:lotus login:thanadet.sut@gmail.com
+2018-09-27 06:50:53,243 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1303, 1302]
+2018-09-27 06:50:53,580 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [667]
+2018-09-27 06:50:54,174 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [668]
+2018-09-27 06:50:55,370 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1304]
+2018-09-27 06:50:55,534 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [670]
+2018-09-27 06:50:55,680 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [671]
+2018-09-27 06:59:17,382 1104 INFO lotus odoo.modules.loading: loading 1 modules...
+2018-09-27 06:59:17,403 1104 INFO lotus odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries
+2018-09-27 06:59:17,502 1104 INFO lotus odoo.modules.loading: loading 59 modules...
+2018-09-27 06:59:17,678 1104 INFO lotus odoo.modules.loading: 59 modules loaded in 0.18s, 0 queries
+2018-09-27 06:59:17,712 1104 INFO lotus odoo.modules.loading: loading 106 modules...
+2018-09-27 06:59:17,914 1104 INFO lotus odoo.modules.registry: module document: creating or updating database tables
+2018-09-27 06:59:18,067 1104 INFO lotus odoo.modules.loading: loading document/views/document_templates.xml
+2018-09-27 06:59:18,290 1104 INFO lotus odoo.addons.base.ir.ir_translation: module document: loading translation file (th) for language th_TH
+2018-09-27 06:59:18,290 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/document/i18n/th.po
+2018-09-27 06:59:18,685 1104 INFO lotus odoo.modules.registry: module link_tracker: creating or updating database tables
+2018-09-27 06:59:18,995 1104 INFO lotus odoo.models: Storing computed values of link.tracker fields count, favicon
+2018-09-27 06:59:19,078 1104 INFO lotus odoo.modules.loading: loading link_tracker/views/link_tracker.xml
+2018-09-27 06:59:19,450 1104 INFO lotus odoo.modules.loading: loading link_tracker/security/ir.model.access.csv
+2018-09-27 06:59:19,564 1104 INFO lotus odoo.addons.base.ir.ir_translation: module link_tracker: loading translation file (th) for language th_TH
+2018-09-27 06:59:19,564 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/link_tracker/i18n/th.po
+2018-09-27 06:59:20,253 1104 INFO lotus odoo.modules.registry: module lunch: creating or updating database tables
+2018-09-27 06:59:21,056 1104 INFO lotus odoo.models: Storing computed values of lunch.order.line fields category_id, date, price, supplier, user_id
+2018-09-27 06:59:21,057 1104 INFO lotus odoo.models: Storing computed values of lunch.order fields company_id, currency_id, state, total
+2018-09-27 06:59:21,142 1104 INFO lotus odoo.modules.loading: loading lunch/security/lunch_security.xml
+2018-09-27 06:59:22,298 1104 INFO lotus odoo.modules.loading: loading lunch/security/ir.model.access.csv
+2018-09-27 06:59:22,473 1104 INFO lotus odoo.modules.loading: loading lunch/report/lunch_order_views.xml
+2018-09-27 06:59:22,503 1104 INFO lotus odoo.modules.loading: loading lunch/report/lunch_order_templates.xml
+2018-09-27 06:59:22,540 1104 INFO lotus odoo.modules.loading: loading lunch/views/lunch_templates.xml
+2018-09-27 06:59:22,698 1104 INFO lotus odoo.modules.loading: loading lunch/wizard/lucky_order_view.xml
+2018-09-27 06:59:22,745 1104 INFO lotus odoo.modules.loading: loading lunch/views/lunch_views.xml
+2018-09-27 06:59:23,627 1104 INFO lotus odoo.modules.loading: loading lunch/data/lunch_data.xml
+2018-09-27 06:59:23,720 1104 INFO lotus odoo.addons.base.ir.ir_translation: module lunch: loading translation file (th) for language th_TH
+2018-09-27 06:59:23,720 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/lunch/i18n/th.po
+2018-09-27 06:59:25,668 1104 INFO lotus odoo.modules.registry: module website: creating or updating database tables
+2018-09-27 06:59:26,050 1104 INFO lotus odoo.models: Computing parent left and right for table website_menu...
+2018-09-27 06:59:26,713 1104 INFO lotus odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-09-27 06:59:26,799 1104 INFO lotus odoo.models: Storing computed values of website fields default_lang_code
+2018-09-27 06:59:26,884 1104 INFO lotus odoo.modules.loading: loading website/data/website_data.xml
+2018-09-27 06:59:27,404 1104 INFO lotus odoo.modules.loading: loading website/data/web_planner_data.xml
+2018-09-27 06:59:27,505 1104 INFO lotus odoo.modules.loading: loading website/security/website_security.xml
+2018-09-27 06:59:28,550 1104 INFO lotus odoo.modules.loading: loading website/security/ir.model.access.csv
+2018-09-27 06:59:28,680 1104 INFO lotus odoo.modules.loading: loading website/views/website_templates.xml
+2018-09-27 06:59:30,070 1104 INFO lotus odoo.modules.loading: loading website/views/website_navbar_templates.xml
+2018-09-27 06:59:30,146 1104 INFO lotus odoo.modules.loading: loading website/views/snippets.xml
+2018-09-27 06:59:30,944 1104 INFO lotus odoo.modules.loading: loading website/views/website_views.xml
+2018-09-27 06:59:31,168 1104 INFO lotus odoo.modules.loading: loading website/views/res_config_views.xml
+2018-09-27 06:59:31,313 1104 INFO lotus odoo.modules.loading: loading website/views/ir_actions_views.xml
+2018-09-27 06:59:31,714 1104 INFO lotus odoo.modules.loading: loading website/wizard/base_language_install_views.xml
+2018-09-27 06:59:31,815 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website: loading translation file (th) for language th_TH
+2018-09-27 06:59:31,815 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website/i18n/th.po
+2018-09-27 06:59:34,645 1104 INFO lotus odoo.modules.registry: module website_links: creating or updating database tables
+2018-09-27 06:59:34,730 1104 INFO lotus odoo.modules.loading: loading website_links/views/website_links_template.xml
+2018-09-27 06:59:35,002 1104 INFO lotus odoo.modules.loading: loading website_links/views/website_links_graphs.xml
+2018-09-27 06:59:35,072 1104 INFO lotus odoo.modules.loading: loading website_links/security/ir.model.access.csv
+2018-09-27 06:59:35,133 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_links: loading translation file (th) for language th_TH
+2018-09-27 06:59:35,133 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_links/i18n/th.po
+2018-09-27 06:59:35,570 1104 INFO lotus odoo.modules.registry: module website_partner: creating or updating database tables
+2018-09-27 06:59:35,803 1104 INFO lotus odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-09-27 06:59:35,891 1104 INFO lotus odoo.modules.loading: loading website_partner/views/res_partner_views.xml
+2018-09-27 06:59:36,047 1104 INFO lotus odoo.modules.loading: loading website_partner/views/website_partner_templates.xml
+2018-09-27 06:59:36,113 1104 INFO lotus odoo.modules.loading: loading website_partner/data/website_partner_data.xml
+2018-09-27 06:59:36,166 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_partner: loading translation file (th) for language th_TH
+2018-09-27 06:59:36,166 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_partner/i18n/th.po
+2018-09-27 06:59:36,515 1104 INFO lotus odoo.modules.registry: module website_portal: creating or updating database tables
+2018-09-27 06:59:36,601 1104 INFO lotus odoo.modules.loading: loading website_portal/views/website_portal_templates.xml
+2018-09-27 06:59:36,970 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_portal: loading translation file (th) for language th_TH
+2018-09-27 06:59:36,971 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_portal/i18n/th.po
+2018-09-27 06:59:37,501 1104 INFO lotus odoo.modules.registry: module website_theme_install: creating or updating database tables
+2018-09-27 06:59:37,634 1104 INFO lotus odoo.modules.loading: loading website_theme_install/views/assets.xml
+2018-09-27 06:59:37,931 1104 INFO lotus odoo.modules.loading: loading website_theme_install/views/views.xml
+2018-09-27 06:59:38,095 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_theme_install: loading translation file (th) for language th_TH
+2018-09-27 06:59:38,096 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_theme_install/i18n/th.po
+2018-09-27 06:59:38,594 1104 INFO lotus odoo.modules.registry: module event: creating or updating database tables
+2018-09-27 06:59:39,662 1104 INFO lotus odoo.models: Storing computed values of event.mail.registration fields scheduled_date
+2018-09-27 06:59:39,664 1104 INFO lotus odoo.models: Storing computed values of event.registration fields company_id
+2018-09-27 06:59:39,664 1104 INFO lotus odoo.models: Storing computed values of event.event fields country_id, seats_available, seats_reserved, seats_unconfirmed, seats_used
+2018-09-27 06:59:39,665 1104 INFO lotus odoo.models: Storing computed values of event.mail fields done, scheduled_date
+2018-09-27 06:59:39,753 1104 INFO lotus odoo.modules.loading: loading event/security/event_security.xml
+2018-09-27 06:59:40,988 1104 INFO lotus odoo.modules.loading: loading event/security/ir.model.access.csv
+2018-09-27 06:59:41,228 1104 INFO lotus odoo.modules.loading: loading event/wizard/event_confirm_view.xml
+2018-09-27 06:59:41,286 1104 INFO lotus odoo.modules.loading: loading event/views/event_views.xml
+2018-09-27 06:59:42,041 1104 INFO lotus odoo.modules.loading: loading event/report/report_event_registration_view.xml
+2018-09-27 06:59:42,181 1104 INFO lotus odoo.modules.loading: loading event/report/event_event_templates.xml
+2018-09-27 06:59:42,249 1104 INFO lotus odoo.modules.loading: loading event/report/event_event_reports.xml
+2018-09-27 06:59:42,293 1104 INFO lotus odoo.modules.loading: loading event/data/event_data.xml
+2018-09-27 06:59:42,371 1104 INFO lotus odoo.modules.loading: loading event/views/event_config_settings_views.xml
+2018-09-27 06:59:42,437 1104 INFO lotus odoo.modules.loading: loading event/views/event_templates.xml
+2018-09-27 06:59:42,617 1104 INFO lotus odoo.modules.loading: loading event/data/email_template_data.xml
+2018-09-27 06:59:42,672 1104 INFO lotus odoo.addons.base.ir.ir_translation: module event: loading translation file (th) for language th_TH
+2018-09-27 06:59:42,672 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/event/i18n/th.po
+2018-09-27 06:59:44,767 1104 INFO lotus odoo.modules.registry: module fleet: creating or updating database tables
+2018-09-27 06:59:46,425 1104 INFO lotus odoo.models: Storing computed values of fleet.vehicle.log.fuel fields cost_amount
+2018-09-27 06:59:46,426 1104 INFO lotus odoo.models: Storing computed values of fleet.vehicle fields name
+2018-09-27 06:59:46,427 1104 INFO lotus odoo.models: Storing computed values of fleet.vehicle.log.contract fields cost_amount, name
+2018-09-27 06:59:46,428 1104 INFO lotus odoo.models: Storing computed values of fleet.vehicle.log.services fields cost_amount
+2018-09-27 06:59:46,428 1104 INFO lotus odoo.models: Storing computed values of fleet.vehicle.odometer fields name
+2018-09-27 06:59:46,429 1104 INFO lotus odoo.models: Storing computed values of fleet.vehicle.cost fields name
+2018-09-27 06:59:46,520 1104 INFO lotus odoo.modules.loading: loading fleet/security/fleet_security.xml
+2018-09-27 06:59:47,957 1104 INFO lotus odoo.modules.loading: loading fleet/security/ir.model.access.csv
+2018-09-27 06:59:48,272 1104 INFO lotus odoo.modules.loading: loading fleet/views/fleet_view.xml
+2018-09-27 06:59:49,983 1104 INFO lotus odoo.modules.loading: loading fleet/views/fleet_board_view.xml
+2018-09-27 06:59:50,065 1104 INFO lotus odoo.modules.loading: loading fleet/data/fleet_cars_data.xml
+2018-09-27 06:59:53,219 1104 INFO lotus odoo.modules.loading: loading fleet/data/fleet_data.xml
+2018-09-27 06:59:53,732 1104 INFO lotus odoo.addons.base.ir.ir_translation: module fleet: loading translation file (th) for language th_TH
+2018-09-27 06:59:53,732 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/fleet/i18n/th.po
+2018-09-27 06:59:56,859 1104 INFO lotus odoo.modules.registry: module gamification: creating or updating database tables
+2018-09-27 06:59:58,258 1104 INFO lotus odoo.models: Storing computed values of gamification.challenge fields next_report_date
+2018-09-27 06:59:58,259 1104 INFO lotus odoo.models: Storing computed values of gamification.goal fields challenge_id
+2018-09-27 06:59:58,352 1104 INFO lotus odoo.modules.loading: loading gamification/wizard/update_goal.xml
+2018-09-27 06:59:58,430 1104 INFO lotus odoo.modules.loading: loading gamification/wizard/grant_badge.xml
+2018-09-27 06:59:58,481 1104 INFO lotus odoo.modules.loading: loading gamification/views/badge.xml
+2018-09-27 06:59:58,647 1104 INFO lotus odoo.modules.loading: loading gamification/views/challenge.xml
+2018-09-27 06:59:58,874 1104 INFO lotus odoo.modules.loading: loading gamification/views/goal.xml
+2018-09-27 06:59:59,242 1104 INFO lotus odoo.modules.loading: loading gamification/data/cron.xml
+2018-09-27 06:59:59,260 1104 INFO lotus odoo.modules.loading: loading gamification/security/gamification_security.xml
+2018-09-27 06:59:59,316 1104 INFO lotus odoo.modules.loading: loading gamification/security/ir.model.access.csv
+2018-09-27 06:59:59,507 1104 INFO lotus odoo.modules.loading: loading gamification/data/goal_base.xml
+2018-09-27 07:00:00,125 1104 INFO lotus odoo.modules.loading: loading gamification/data/badge.xml
+2018-09-27 07:00:00,443 1104 INFO lotus odoo.modules.loading: loading gamification/views/gamification.xml
+2018-09-27 07:00:00,642 1104 INFO lotus odoo.addons.base.ir.ir_translation: module gamification: loading translation file (th) for language th_TH
+2018-09-27 07:00:00,643 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/gamification/i18n/th.po
+2018-09-27 07:00:02,970 1104 INFO lotus odoo.modules.registry: module mass_mailing: creating or updating database tables
+2018-09-27 07:00:06,169 1104 INFO lotus odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-09-27 07:00:06,379 1104 INFO lotus odoo.models: Storing computed values of mail.mail.statistics fields mass_mailing_campaign_id, state, state_update
+2018-09-27 07:00:06,474 1104 INFO lotus odoo.modules.loading: loading mass_mailing/security/mass_mailing_security.xml
+2018-09-27 07:00:07,635 1104 INFO lotus odoo.modules.loading: loading mass_mailing/data/mass_mailing_data.xml
+2018-09-27 07:00:07,668 1104 INFO lotus odoo.modules.loading: loading mass_mailing/wizard/mail_compose_message_views.xml
+2018-09-27 07:00:07,733 1104 INFO lotus odoo.modules.loading: loading mass_mailing/wizard/test_mailing_views.xml
+2018-09-27 07:00:07,798 1104 INFO lotus odoo.modules.loading: loading mass_mailing/views/mass_mailing_report_views.xml
+2018-09-27 07:00:08,000 1104 INFO lotus odoo.modules.loading: loading mass_mailing/views/mass_mailing_stats_views.xml
+2018-09-27 07:00:08,193 1104 INFO lotus odoo.modules.loading: loading mass_mailing/views/link_tracker_views.xml
+2018-09-27 07:00:08,295 1104 INFO lotus odoo.modules.loading: loading mass_mailing/views/mass_mailing_template.xml
+2018-09-27 07:00:08,533 1104 INFO lotus odoo.modules.loading: loading mass_mailing/views/mass_mailing_views.xml
+2018-09-27 07:00:09,521 1104 INFO lotus odoo.modules.loading: loading mass_mailing/views/res_config_views.xml
+2018-09-27 07:00:09,593 1104 INFO lotus odoo.modules.loading: loading mass_mailing/security/ir.model.access.csv
+2018-09-27 07:00:09,774 1104 INFO lotus odoo.modules.loading: loading mass_mailing/views/editor_field_html.xml
+2018-09-27 07:00:09,871 1104 INFO lotus odoo.modules.loading: loading mass_mailing/views/themes_templates.xml
+2018-09-27 07:00:09,907 1104 INFO lotus odoo.modules.loading: loading mass_mailing/views/snippets_themes.xml
+2018-09-27 07:00:10,618 1104 INFO lotus odoo.modules.loading: loading mass_mailing/views/snippets_themes_options.xml
+2018-09-27 07:00:10,667 1104 INFO lotus odoo.addons.base.ir.ir_translation: module mass_mailing: loading translation file (th) for language th_TH
+2018-09-27 07:00:10,667 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/mass_mailing/i18n/th.po
+2018-09-27 07:00:14,017 1104 INFO lotus odoo.modules.registry: module rating: creating or updating database tables
+2018-09-27 07:00:14,203 1104 INFO lotus odoo.models: Storing computed values of rating.rating fields res_name
+2018-09-27 07:00:14,299 1104 INFO lotus odoo.modules.loading: loading rating/views/rating_view.xml
+2018-09-27 07:00:14,497 1104 INFO lotus odoo.modules.loading: loading rating/views/rating_template.xml
+2018-09-27 07:00:14,871 1104 INFO lotus odoo.modules.loading: loading rating/security/ir.model.access.csv
+2018-09-27 07:00:14,934 1104 INFO lotus odoo.addons.base.ir.ir_translation: module rating: loading translation file (th) for language th_TH
+2018-09-27 07:00:14,935 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/rating/i18n/th.po
+2018-09-27 07:00:15,829 1104 INFO lotus odoo.modules.registry: module survey: creating or updating database tables
+2018-09-27 07:00:17,491 1104 INFO lotus odoo.models: Storing computed values of survey.user_input_line fields survey_id
+2018-09-27 07:00:17,591 1104 INFO lotus odoo.modules.loading: loading survey/security/survey_security.xml
+2018-09-27 07:00:18,850 1104 INFO lotus odoo.modules.loading: loading survey/security/ir.model.access.csv
+2018-09-27 07:00:19,147 1104 INFO lotus odoo.modules.loading: loading survey/views/survey_views.xml
+2018-09-27 07:00:20,310 1104 INFO lotus odoo.modules.loading: loading survey/views/survey_templates.xml
+2018-09-27 07:00:20,944 1104 INFO lotus odoo.modules.loading: loading survey/views/survey_result.xml
+2018-09-27 07:00:21,292 1104 INFO lotus odoo.modules.loading: loading survey/wizard/survey_email_compose_message.xml
+2018-09-27 07:00:21,362 1104 INFO lotus odoo.modules.loading: loading survey/data/survey_stages.xml
+2018-09-27 07:00:21,399 1104 INFO lotus odoo.addons.base.ir.ir_translation: module survey: loading translation file (th) for language th_TH
+2018-09-27 07:00:21,400 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/survey/i18n/th.po
+2018-09-27 07:00:24,062 1104 INFO lotus odoo.modules.registry: module website_form: creating or updating database tables
+2018-09-27 07:00:24,865 1104 INFO lotus odoo.modules.loading: loading website_form/views/assets.xml
+2018-09-27 07:00:25,029 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_form: loading translation file (th) for language th_TH
+2018-09-27 07:00:25,029 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_form/i18n/th.po
+2018-09-27 07:00:25,467 1104 INFO lotus odoo.modules.registry: module website_mail: creating or updating database tables
+2018-09-27 07:00:25,846 1104 INFO lotus odoo.modules.loading: loading website_mail/views/website_mail_templates.xml
+2018-09-27 07:00:26,039 1104 INFO lotus odoo.modules.loading: loading website_mail/data/mail_channel_data.xml
+2018-09-27 07:00:26,225 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_mail: loading translation file (th) for language th_TH
+2018-09-27 07:00:26,226 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_mail/i18n/th.po
+2018-09-27 07:00:26,669 1104 INFO lotus odoo.modules.registry: module hr_attendance: creating or updating database tables
+2018-09-27 07:00:26,979 1104 INFO lotus odoo.models: Storing computed values of hr.attendance fields worked_hours
+2018-09-27 07:00:27,077 1104 INFO lotus odoo.modules.loading: loading hr_attendance/security/hr_attendance_security.xml
+2018-09-27 07:00:30,214 1104 INFO lotus odoo.modules.loading: loading hr_attendance/security/ir.model.access.csv
+2018-09-27 07:00:30,249 1104 INFO lotus odoo.modules.loading: loading hr_attendance/views/web_asset_backend_template.xml
+2018-09-27 07:00:30,461 1104 INFO lotus odoo.modules.loading: loading hr_attendance/views/hr_attendance_view.xml
+2018-09-27 07:00:30,815 1104 INFO lotus odoo.modules.loading: loading hr_attendance/report/hr_employee_badge.xml
+2018-09-27 07:00:30,870 1104 INFO lotus odoo.modules.loading: loading hr_attendance/views/hr_department_view.xml
+2018-09-27 07:00:30,927 1104 INFO lotus odoo.modules.loading: loading hr_attendance/views/hr_employee_view.xml
+2018-09-27 07:00:31,096 1104 INFO lotus odoo.modules.loading: loading hr_attendance/views/res_config_view.xml
+2018-09-27 07:00:31,176 1104 INFO lotus odoo.addons.base.ir.ir_translation: module hr_attendance: loading translation file (th) for language th_TH
+2018-09-27 07:00:31,176 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/hr_attendance/i18n/th.po
+2018-09-27 07:00:32,134 1104 INFO lotus odoo.modules.registry: module hr_gamification: creating or updating database tables
+2018-09-27 07:00:32,383 1104 INFO lotus odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-09-27 07:00:32,524 1104 INFO lotus odoo.modules.loading: loading hr_gamification/security/gamification_security.xml
+2018-09-27 07:00:32,592 1104 INFO lotus odoo.modules.loading: loading hr_gamification/security/ir.model.access.csv
+2018-09-27 07:00:32,659 1104 INFO lotus odoo.modules.loading: loading hr_gamification/wizard/gamification_badge_user_wizard_views.xml
+2018-09-27 07:00:32,771 1104 INFO lotus odoo.modules.loading: loading hr_gamification/views/gamification_views.xml
+2018-09-27 07:00:32,922 1104 INFO lotus odoo.modules.loading: loading hr_gamification/views/hr_employee_views.xml
+2018-09-27 07:00:33,000 1104 INFO lotus odoo.modules.loading: loading hr_gamification/views/gamification_templates.xml
+2018-09-27 07:00:33,224 1104 INFO lotus odoo.addons.base.ir.ir_translation: module hr_gamification: loading translation file (th) for language th_TH
+2018-09-27 07:00:33,224 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/hr_gamification/i18n/th.po
+2018-09-27 07:00:33,973 1104 INFO lotus odoo.modules.registry: module im_livechat: creating or updating database tables
+2018-09-27 07:00:34,575 1104 INFO lotus odoo.models: Storing computed values of mail.channel fields rating_last_value
+2018-09-27 07:00:34,709 1104 INFO lotus odoo.modules.loading: loading im_livechat/security/im_livechat_channel_security.xml
+2018-09-27 07:00:35,961 1104 INFO lotus odoo.modules.loading: loading im_livechat/security/ir.model.access.csv
+2018-09-27 07:00:36,077 1104 INFO lotus odoo.modules.loading: loading im_livechat/views/mail_channel_views.xml
+2018-09-27 07:00:36,254 1104 INFO lotus odoo.modules.loading: loading im_livechat/views/im_livechat_channel_views.xml
+2018-09-27 07:00:36,686 1104 INFO lotus odoo.modules.loading: loading im_livechat/views/im_livechat_channel_templates.xml
+2018-09-27 07:00:37,028 1104 INFO lotus odoo.modules.loading: loading im_livechat/report/im_livechat_report_channel_views.xml
+2018-09-27 07:00:37,161 1104 INFO lotus odoo.modules.loading: loading im_livechat/report/im_livechat_report_operator_views.xml
+2018-09-27 07:00:37,294 1104 INFO lotus odoo.modules.loading: loading im_livechat/data/im_livechat_channel_data.xml
+2018-09-27 07:00:37,330 1104 INFO lotus odoo.addons.base.ir.ir_translation: module im_livechat: loading translation file (th) for language th_TH
+2018-09-27 07:00:37,330 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/im_livechat/i18n/th.po
+2018-09-27 07:00:38,913 1104 INFO lotus odoo.modules.registry: module website_blog: creating or updating database tables
+2018-09-27 07:00:39,774 1104 INFO lotus odoo.models: Storing computed values of blog.post fields post_date
+2018-09-27 07:00:39,876 1104 INFO lotus odoo.modules.loading: loading website_blog/data/website_blog_data.xml
+2018-09-27 07:00:40,071 1104 INFO lotus odoo.modules.loading: loading website_blog/views/website_blog_views.xml
+2018-09-27 07:00:40,470 1104 INFO lotus odoo.modules.loading: loading website_blog/views/website_blog_templates.xml
+2018-09-27 07:00:42,496 1104 INFO lotus odoo.modules.loading: loading website_blog/views/snippets.xml
+2018-09-27 07:00:42,583 1104 INFO lotus odoo.modules.loading: loading website_blog/security/ir.model.access.csv
+2018-09-27 07:00:42,698 1104 INFO lotus odoo.modules.loading: loading website_blog/security/website_blog_security.xml
+2018-09-27 07:00:42,750 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_blog: loading translation file (th) for language th_TH
+2018-09-27 07:00:42,751 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_blog/i18n/th.po
+2018-09-27 07:00:45,263 1104 INFO lotus odoo.modules.registry: module website_event: creating or updating database tables
+2018-09-27 07:00:45,506 1104 INFO lotus odoo.models: Storing computed values of event.event fields show_menu
+2018-09-27 07:00:45,672 1104 INFO lotus odoo.modules.loading: loading website_event/data/website_event_data.xml
+2018-09-27 07:00:45,738 1104 INFO lotus odoo.modules.loading: loading website_event/views/website_event_templates.xml
+2018-09-27 07:00:46,895 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.translation records with IDs: [67179]
+2018-09-27 07:00:47,069 1104 INFO lotus odoo.modules.loading: loading website_event/views/website_event_views.xml
+2018-09-27 07:00:47,128 1104 INFO lotus odoo.modules.loading: loading website_event/security/ir.model.access.csv
+2018-09-27 07:00:47,176 1104 INFO lotus odoo.modules.loading: loading website_event/security/website_event_security.xml
+2018-09-27 07:00:47,699 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_event: loading translation file (th) for language th_TH
+2018-09-27 07:00:47,699 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_event/i18n/th.po
+2018-09-27 07:00:48,740 1104 INFO lotus odoo.modules.registry: module website_forum: creating or updating database tables
+2018-09-27 07:00:48,971 1104 INFO lotus odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-09-27 07:00:50,404 1104 INFO lotus odoo.models: Storing computed values of gamification.badge.user fields level
+2018-09-27 07:00:50,406 1104 INFO lotus odoo.models: Storing computed values of forum.tag fields posts_count
+2018-09-27 07:00:50,406 1104 INFO lotus odoo.models: Storing computed values of forum.post.vote fields forum_id, recipient_id
+2018-09-27 07:00:50,407 1104 INFO lotus odoo.models: Storing computed values of forum.post fields child_count, favourite_count, has_validated_answer, plain_content, relevancy, self_reply, vote_count
+2018-09-27 07:00:50,507 1104 INFO lotus odoo.modules.loading: loading website_forum/data/forum_data.xml
+2018-09-27 07:00:50,726 1104 INFO lotus odoo.modules.loading: loading website_forum/views/forum.xml
+2018-09-27 07:00:51,195 1104 INFO lotus odoo.modules.loading: loading website_forum/views/res_users.xml
+2018-09-27 07:00:51,409 1104 INFO lotus odoo.modules.loading: loading website_forum/views/website_forum.xml
+2018-09-27 07:00:53,042 1104 INFO lotus odoo.modules.loading: loading website_forum/views/ir_qweb.xml
+2018-09-27 07:00:53,085 1104 INFO lotus odoo.modules.loading: loading website_forum/security/ir.model.access.csv
+2018-09-27 07:00:53,293 1104 INFO lotus odoo.modules.loading: loading website_forum/data/badges_question.xml
+2018-09-27 07:00:55,966 1104 INFO lotus odoo.modules.loading: loading website_forum/data/badges_answer.xml
+2018-09-27 07:00:57,599 1104 INFO lotus odoo.modules.loading: loading website_forum/data/badges_participation.xml
+2018-09-27 07:00:58,776 1104 INFO lotus odoo.modules.loading: loading website_forum/data/badges_moderation.xml
+2018-09-27 07:00:59,977 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_forum: loading translation file (th) for language th_TH
+2018-09-27 07:00:59,977 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_forum/i18n/th.po
+2018-09-27 07:01:02,956 1104 INFO lotus odoo.modules.registry: module website_mass_mailing: creating or updating database tables
+2018-09-27 07:01:03,137 1104 INFO lotus odoo.modules.loading: loading website_mass_mailing/security/mass_mailing_security.xml
+2018-09-27 07:01:03,609 1104 INFO lotus odoo.modules.loading: loading website_mass_mailing/views/website_mass_mailing_templates.xml
+2018-09-27 07:01:03,764 1104 INFO lotus odoo.modules.loading: loading website_mass_mailing/views/unsubscribe_templates.xml
+2018-09-27 07:01:03,889 1104 INFO lotus odoo.modules.loading: loading website_mass_mailing/views/snippets_templates.xml
+2018-09-27 07:01:04,236 1104 INFO lotus odoo.modules.loading: loading website_mass_mailing/views/mass_mailing_view.xml
+2018-09-27 07:01:04,287 1104 INFO lotus odoo.modules.loading: loading website_mass_mailing/views/res_config_view.xml
+2018-09-27 07:01:04,349 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_mass_mailing: loading translation file (th) for language th_TH
+2018-09-27 07:01:04,349 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_mass_mailing/i18n/th.po
+2018-09-27 07:01:05,036 1104 INFO lotus odoo.modules.registry: module website_slides: creating or updating database tables
+2018-09-27 07:01:06,072 1104 INFO lotus odoo.models: Storing computed values of slide.slide fields total_views
+2018-09-27 07:01:06,073 1104 INFO lotus odoo.models: Storing computed values of slide.category fields nbr_documents, nbr_infographics, nbr_presentations, nbr_videos, total
+2018-09-27 07:01:06,074 1104 INFO lotus odoo.models: Storing computed values of slide.channel fields nbr_documents, nbr_infographics, nbr_presentations, nbr_videos, promoted_slide_id, total
+2018-09-27 07:01:06,175 1104 INFO lotus odoo.modules.loading: loading website_slides/view/res_config.xml
+2018-09-27 07:01:06,286 1104 INFO lotus odoo.modules.loading: loading website_slides/view/website_slides.xml
+2018-09-27 07:01:06,959 1104 INFO lotus odoo.modules.loading: loading website_slides/view/website_slides_embed.xml
+2018-09-27 07:01:07,062 1104 INFO lotus odoo.modules.loading: loading website_slides/view/website_slides_backend.xml
+2018-09-27 07:01:07,589 1104 INFO lotus odoo.modules.loading: loading website_slides/data/website_slides_data.xml
+2018-09-27 07:01:07,925 1104 INFO lotus odoo.modules.loading: loading website_slides/security/ir.model.access.csv
+2018-09-27 07:01:08,132 1104 INFO lotus odoo.modules.loading: loading website_slides/security/website_slides_security.xml
+2018-09-27 07:01:08,224 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_slides: loading translation file (th) for language th_TH
+2018-09-27 07:01:08,224 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_slides/i18n/th.po
+2018-09-27 07:01:10,377 1104 INFO lotus odoo.modules.registry: module hr_holidays: creating or updating database tables
+2018-09-27 07:01:11,401 1104 INFO lotus odoo.models: Storing computed values of hr.holidays fields department_id, number_of_days, user_id
+2018-09-27 07:01:11,504 1104 INFO lotus odoo.modules.loading: loading hr_holidays/data/report_paperformat.xml
+2018-09-27 07:01:11,552 1104 INFO lotus odoo.modules.loading: loading hr_holidays/data/hr_holidays_data.xml
+2018-09-27 07:01:11,758 1104 INFO lotus odoo.modules.loading: loading hr_holidays/security/hr_holidays_security.xml
+2018-09-27 07:01:13,181 1104 INFO lotus odoo.modules.loading: loading hr_holidays/security/ir.model.access.csv
+2018-09-27 07:01:13,316 1104 INFO lotus odoo.modules.loading: loading hr_holidays/views/resource_views.xml
+2018-09-27 07:01:13,444 1104 INFO lotus odoo.modules.loading: loading hr_holidays/views/hr_holidays_views.xml
+2018-09-27 07:01:14,486 1104 INFO lotus odoo.modules.loading: loading hr_holidays/views/hr_views.xml
+2018-09-27 07:01:14,738 1104 INFO lotus odoo.modules.loading: loading hr_holidays/wizard/hr_holidays_summary_department_views.xml
+2018-09-27 07:01:14,802 1104 INFO lotus odoo.modules.loading: loading hr_holidays/wizard/hr_holidays_summary_employees_views.xml
+2018-09-27 07:01:14,857 1104 INFO lotus odoo.modules.loading: loading hr_holidays/report/hr_holidays_templates.xml
+2018-09-27 07:01:14,895 1104 INFO lotus odoo.modules.loading: loading hr_holidays/report/hr_holidays_reports.xml
+2018-09-27 07:01:14,917 1104 INFO lotus odoo.modules.loading: loading hr_holidays/report/hr_holidays_leaves_report_views.xml
+2018-09-27 07:01:14,992 1104 INFO lotus odoo.modules.loading: loading hr_holidays/report/hr_holidays_views.xml
+2018-09-27 07:01:15,119 1104 INFO lotus odoo.addons.base.ir.ir_translation: module hr_holidays: loading translation file (th) for language th_TH
+2018-09-27 07:01:15,119 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/hr_holidays/i18n/th.po
+2018-09-27 07:01:17,660 1104 INFO lotus odoo.modules.registry: module hr_recruitment: creating or updating database tables
+2018-09-27 07:01:19,082 1104 INFO lotus odoo.models: Storing computed values of hr.job fields manager_id
+2018-09-27 07:01:19,189 1104 INFO lotus odoo.modules.loading: loading hr_recruitment/security/hr_recruitment_security.xml
+2018-09-27 07:01:20,723 1104 INFO lotus odoo.modules.loading: loading hr_recruitment/security/ir.model.access.csv
+2018-09-27 07:01:20,902 1104 INFO lotus odoo.modules.loading: loading hr_recruitment/data/hr_recruitment_data.xml
+2018-09-27 07:01:21,197 1104 INFO lotus odoo.modules.loading: loading hr_recruitment/views/hr_recruitment_views.xml
+2018-09-27 07:01:22,282 1104 INFO lotus odoo.modules.loading: loading hr_recruitment/report/hr_recruitment_report_views.xml
+2018-09-27 07:01:22,460 1104 INFO lotus odoo.modules.loading: loading hr_recruitment/views/hr_recruitment_config_settings_views.xml
+2018-09-27 07:01:22,537 1104 INFO lotus odoo.modules.loading: loading hr_recruitment/views/hr_recruitment_templates.xml
+2018-09-27 07:01:22,759 1104 INFO lotus odoo.modules.loading: loading hr_recruitment/views/hr_department_views.xml
+2018-09-27 07:01:22,863 1104 INFO lotus odoo.modules.loading: loading hr_recruitment/views/hr_job_views.xml
+2018-09-27 07:01:22,924 1104 INFO lotus odoo.modules.loading: loading hr_recruitment/views/tour_views.xml
+2018-09-27 07:01:22,948 1104 INFO lotus odoo.addons.base.ir.ir_translation: module hr_recruitment: loading translation file (th) for language th_TH
+2018-09-27 07:01:22,949 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/hr_recruitment/i18n/th.po
+2018-09-27 07:01:25,910 1104 INFO lotus odoo.modules.registry: module portal_gamification: creating or updating database tables
+2018-09-27 07:01:26,014 1104 INFO lotus odoo.modules.loading: loading portal_gamification/security/ir.model.access.csv
+2018-09-27 07:01:26,143 1104 INFO lotus odoo.modules.loading: loading portal_gamification/security/portal_security.xml
+2018-09-27 07:01:26,209 1104 INFO lotus odoo.addons.base.ir.ir_translation: module portal_gamification: no translation for language th
+2018-09-27 07:01:26,484 1104 INFO lotus odoo.modules.registry: module website_livechat: creating or updating database tables
+2018-09-27 07:01:26,713 1104 INFO lotus odoo.modules.loading: loading website_livechat/views/website_livechat.xml
+2018-09-27 07:01:27,275 1104 INFO lotus odoo.modules.loading: loading website_livechat/views/res_config.xml
+2018-09-27 07:01:27,334 1104 INFO lotus odoo.modules.loading: loading website_livechat/views/website_livechat_view.xml
+2018-09-27 07:01:27,528 1104 INFO lotus odoo.modules.loading: loading website_livechat/security/ir.model.access.csv
+2018-09-27 07:01:27,544 1104 INFO lotus odoo.modules.loading: loading website_livechat/security/website_livechat.xml
+2018-09-27 07:01:27,569 1104 INFO lotus odoo.modules.loading: loading website_livechat/website_livechat_data.xml
+2018-09-27 07:01:27,662 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_livechat: loading translation file (th) for language th_TH
+2018-09-27 07:01:27,663 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_livechat/i18n/th.po
+2018-09-27 07:01:28,518 1104 INFO lotus odoo.modules.registry: module website_project: creating or updating database tables
+2018-09-27 07:01:28,742 1104 INFO lotus odoo.modules.loading: loading website_project/security/project_security.xml
+2018-09-27 07:01:28,819 1104 INFO lotus odoo.modules.loading: loading website_project/security/ir.model.access.csv
+2018-09-27 07:01:28,895 1104 INFO lotus odoo.modules.loading: loading website_project/views/project_templates.xml
+2018-09-27 07:01:29,125 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_project: loading translation file (th) for language th_TH
+2018-09-27 07:01:29,125 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_project/i18n/th.po
+2018-09-27 07:01:29,658 1104 INFO lotus odoo.modules.registry: module event_sale: creating or updating database tables
+2018-09-27 07:01:30,541 1104 INFO lotus odoo.models: Storing computed values of event.event.ticket fields seats_availability, seats_available, seats_reserved, seats_unconfirmed, seats_used
+2018-09-27 07:01:30,647 1104 INFO lotus odoo.modules.loading: loading event_sale/views/event_views.xml
+2018-09-27 07:01:31,049 1104 INFO lotus odoo.modules.loading: loading event_sale/views/product_views.xml
+2018-09-27 07:01:31,174 1104 INFO lotus odoo.modules.loading: loading event_sale/views/sale_order_views.xml
+2018-09-27 07:01:31,297 1104 INFO lotus odoo.modules.loading: loading event_sale/data/event_sale_data.xml
+2018-09-27 07:01:31,592 1104 INFO lotus odoo.modules.loading: loading event_sale/report/event_event_templates.xml
+2018-09-27 07:01:31,673 1104 INFO lotus odoo.modules.loading: loading event_sale/security/ir.model.access.csv
+2018-09-27 07:01:31,706 1104 INFO lotus odoo.modules.loading: loading event_sale/wizard/event_edit_registration.xml
+2018-09-27 07:01:31,772 1104 INFO lotus odoo.addons.base.ir.ir_translation: module event_sale: loading translation file (th) for language th_TH
+2018-09-27 07:01:31,772 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/event_sale/i18n/th.po
+2018-09-27 07:01:32,948 1104 INFO lotus odoo.modules.registry: module hr_expense: creating or updating database tables
+2018-09-27 07:01:34,158 1104 INFO lotus odoo.models: Storing computed values of hr.expense.sheet fields total_amount
+2018-09-27 07:01:34,160 1104 INFO lotus odoo.models: Storing computed values of hr.expense fields state, total_amount, untaxed_amount
+2018-09-27 07:01:34,268 1104 INFO lotus odoo.modules.loading: loading hr_expense/security/hr_expense_security.xml
+2018-09-27 07:01:35,738 1104 INFO lotus odoo.modules.loading: loading hr_expense/security/ir.model.access.csv
+2018-09-27 07:01:35,962 1104 INFO lotus odoo.modules.loading: loading hr_expense/data/hr_expense_data.xml
+2018-09-27 07:01:36,493 1104 INFO lotus odoo.modules.loading: loading hr_expense/data/hr_expense_sequence.xml
+2018-09-27 07:01:36,507 1104 INFO lotus odoo.modules.loading: loading hr_expense/wizard/hr_expense_refuse_reason.xml
+2018-09-27 07:01:36,561 1104 INFO lotus odoo.modules.loading: loading hr_expense/wizard/hr_expense_register_payment.xml
+2018-09-27 07:01:36,624 1104 INFO lotus odoo.modules.loading: loading hr_expense/views/hr_expense_views.xml
+2018-09-27 07:01:37,794 1104 INFO lotus odoo.modules.loading: loading hr_expense/security/ir_rule.xml
+2018-09-27 07:01:37,869 1104 INFO lotus odoo.modules.loading: loading hr_expense/report/report_expense_sheet.xml
+2018-09-27 07:01:37,928 1104 INFO lotus odoo.modules.loading: loading hr_expense/views/hr_dashboard.xml
+2018-09-27 07:01:38,006 1104 INFO lotus odoo.modules.loading: loading hr_expense/views/hr_expense.xml
+2018-09-27 07:01:38,253 1104 INFO lotus odoo.modules.loading: loading hr_expense/views/tour_views.xml
+2018-09-27 07:01:38,263 1104 INFO lotus odoo.modules.loading: loading hr_expense/views/res_config_views.xml
+2018-09-27 07:01:38,335 1104 INFO lotus odoo.modules.loading: loading hr_expense/data/web_planner_data.xml
+2018-09-27 07:01:38,409 1104 INFO lotus odoo.addons.base.ir.ir_translation: module hr_expense: loading translation file (th) for language th_TH
+2018-09-27 07:01:38,409 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/hr_expense/i18n/th.po
+2018-09-27 07:01:41,054 1104 INFO lotus odoo.modules.registry: module mrp: creating or updating database tables
+2018-09-27 07:01:49,410 1104 INFO lotus odoo.models: Storing computed values of stock.move.lots fields done_move, product_id
+2018-09-27 07:01:49,415 1104 INFO lotus odoo.models: Storing computed values of mrp.bom.line fields routing_id
+2018-09-27 07:01:49,416 1104 INFO lotus odoo.models: Storing computed values of mrp.workcenter fields working_state
+2018-09-27 07:01:49,417 1104 INFO lotus odoo.models: Storing computed values of mrp.workorder fields duration, duration_percent, duration_unit, production_availability, production_date
+2018-09-27 07:01:49,418 1104 INFO lotus odoo.models: Storing computed values of stock.move fields is_done
+2018-09-27 07:01:49,419 1104 INFO lotus odoo.models: Storing computed values of mrp.routing.workcenter fields company_id
+2018-09-27 07:01:49,420 1104 INFO lotus odoo.models: Storing computed values of mrp.workcenter.productivity fields duration, loss_type
+2018-09-27 07:01:49,421 1104 INFO lotus odoo.models: Storing computed values of mrp.message fields name
+2018-09-27 07:01:49,422 1104 INFO lotus odoo.models: Storing computed values of mrp.production fields availability, routing_id
+2018-09-27 07:01:49,700 1104 INFO lotus odoo.modules.loading: loading mrp/security/mrp_security.xml
+2018-09-27 07:01:53,243 1104 INFO lotus odoo.modules.loading: loading mrp/security/ir.model.access.csv
+2018-09-27 07:01:54,610 1104 INFO lotus odoo.modules.loading: loading mrp/data/mrp_data.xml
+2018-09-27 07:01:55,063 1104 INFO lotus odoo.modules.loading: loading mrp/data/mrp_data.yml
+2018-09-27 07:01:55,084 1104 INFO lotus odoo.modules.loading: loading mrp/wizard/mrp_product_produce_views.xml
+2018-09-27 07:01:55,187 1104 INFO lotus odoo.modules.loading: loading mrp/wizard/change_production_qty_views.xml
+2018-09-27 07:01:55,280 1104 INFO lotus odoo.modules.loading: loading mrp/wizard/mrp_workcenter_block_view.xml
+2018-09-27 07:01:55,384 1104 INFO lotus odoo.modules.loading: loading mrp/views/mrp_views_menus.xml
+2018-09-27 07:01:55,603 1104 INFO lotus odoo.modules.loading: loading mrp/views/stock_move_views.xml
+2018-09-27 07:01:55,756 1104 INFO lotus odoo.modules.loading: loading mrp/views/mrp_message_views.xml
+2018-09-27 07:01:56,116 1104 INFO lotus odoo.modules.loading: loading mrp/views/mrp_workorder_views.xml
+2018-09-27 07:01:57,097 1104 INFO lotus odoo.modules.loading: loading mrp/views/mrp_workcenter_views.xml
+2018-09-27 07:01:58,204 1104 INFO lotus odoo.modules.loading: loading mrp/views/mrp_production_views.xml
+2018-09-27 07:01:59,055 1104 INFO lotus odoo.modules.loading: loading mrp/views/mrp_routing_views.xml
+2018-09-27 07:01:59,375 1104 INFO lotus odoo.modules.loading: loading mrp/views/mrp_bom_views.xml
+2018-09-27 07:01:59,742 1104 INFO lotus odoo.modules.loading: loading mrp/views/procurement_views.xml
+2018-09-27 07:01:59,881 1104 INFO lotus odoo.modules.loading: loading mrp/views/product_views.xml
+2018-09-27 07:02:00,460 1104 INFO lotus odoo.modules.loading: loading mrp/views/stock_warehouse_views.xml
+2018-09-27 07:02:00,522 1104 INFO lotus odoo.modules.loading: loading mrp/views/stock_picking_views.xml
+2018-09-27 07:02:00,580 1104 INFO lotus odoo.modules.loading: loading mrp/views/mrp_unbuild_views.xml
+2018-09-27 07:02:00,748 1104 INFO lotus odoo.modules.loading: loading mrp/views/ir_attachment_view.xml
+2018-09-27 07:02:00,792 1104 INFO lotus odoo.modules.loading: loading mrp/views/mrp_config_settings_views.xml
+2018-09-27 07:02:00,861 1104 INFO lotus odoo.modules.loading: loading mrp/views/mrp_templates.xml
+2018-09-27 07:02:01,106 1104 INFO lotus odoo.modules.loading: loading mrp/views/stock_scrap_views.xml
+2018-09-27 07:02:01,215 1104 INFO lotus odoo.modules.loading: loading mrp/report/mrp_report_views_main.xml
+2018-09-27 07:02:01,273 1104 INFO lotus odoo.modules.loading: loading mrp/report/mrp_production_templates.xml
+2018-09-27 07:02:01,314 1104 INFO lotus odoo.modules.loading: loading mrp/report/mrp_bom_structure_report_templates.xml
+2018-09-27 07:02:01,350 1104 INFO lotus odoo.modules.loading: loading mrp/report/mrp_bom_cost_report_templates.xml
+2018-09-27 07:02:01,402 1104 INFO lotus odoo.addons.base.ir.ir_translation: module mrp: loading translation file (th) for language th_TH
+2018-09-27 07:02:01,402 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/mrp/i18n/th.po
+2018-09-27 07:02:08,205 1104 INFO lotus odoo.modules.registry: module survey_crm: creating or updating database tables
+2018-09-27 07:02:08,485 1104 INFO lotus odoo.modules.loading: loading survey_crm/views/survey_crm_views.xml
+2018-09-27 07:02:08,518 1104 INFO lotus odoo.addons.base.ir.ir_translation: module survey_crm: loading translation file (th) for language th_TH
+2018-09-27 07:02:08,518 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/survey_crm/i18n/th.po
+2018-09-27 07:02:08,863 1104 INFO lotus odoo.modules.registry: module website_crm: creating or updating database tables
+2018-09-27 07:02:09,073 1104 INFO lotus odoo.modules.loading: loading website_crm/data/website_crm_data.xml
+2018-09-27 07:02:09,142 1104 INFO lotus odoo.modules.loading: loading website_crm/views/website_crm_templates.xml
+2018-09-27 07:02:09,580 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_crm: loading translation file (th) for language th_TH
+2018-09-27 07:02:09,580 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_crm/i18n/th.po
+2018-09-27 07:02:10,250 1104 INFO lotus odoo.modules.registry: module website_issue: creating or updating database tables
+2018-09-27 07:02:10,360 1104 INFO lotus odoo.modules.loading: loading website_issue/data/website_issue_data.xml
+2018-09-27 07:02:10,390 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_issue: no translation for language th
+2018-09-27 07:02:10,719 1104 INFO lotus odoo.modules.registry: module website_payment: creating or updating database tables
+2018-09-27 07:02:11,014 1104 INFO lotus odoo.modules.loading: loading website_payment/views/website_payment_view.xml
+2018-09-27 07:02:11,306 1104 INFO lotus odoo.modules.loading: loading website_payment/views/website_payment_templates.xml
+2018-09-27 07:02:11,698 1104 INFO lotus odoo.modules.loading: loading website_payment/views/res_config_view.xml
+2018-09-27 07:02:11,794 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_payment: loading translation file (th) for language th_TH
+2018-09-27 07:02:11,794 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_payment/i18n/th.po
+2018-09-27 07:02:12,626 1104 INFO lotus odoo.modules.registry: module website_project_issue: creating or updating database tables
+2018-09-27 07:02:12,798 1104 INFO lotus odoo.modules.loading: loading website_project_issue/security/portal_security.xml
+2018-09-27 07:02:12,850 1104 INFO lotus odoo.modules.loading: loading website_project_issue/security/ir.model.access.csv
+2018-09-27 07:02:12,868 1104 INFO lotus odoo.modules.loading: loading website_project_issue/views/project_issue_templates.xml
+2018-09-27 07:02:13,132 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_project_issue: loading translation file (th) for language th_TH
+2018-09-27 07:02:13,132 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_project_issue/i18n/th.po
+2018-09-27 07:02:13,674 1104 INFO lotus odoo.modules.registry: module website_project_timesheet: creating or updating database tables
+2018-09-27 07:02:13,787 1104 INFO lotus odoo.modules.loading: loading website_project_timesheet/security/ir.model.access.csv
+2018-09-27 07:02:13,806 1104 INFO lotus odoo.modules.loading: loading website_project_timesheet/security/account_analytic_line_security.xml
+2018-09-27 07:02:13,859 1104 INFO lotus odoo.modules.loading: loading website_project_timesheet/views/account_analytic_line_templates.xml
+2018-09-27 07:02:13,922 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_project_timesheet: loading translation file (th) for language th_TH
+2018-09-27 07:02:13,922 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_project_timesheet/i18n/th.po
+2018-09-27 07:02:14,396 1104 INFO lotus odoo.modules.registry: module gamification_sale_crm: creating or updating database tables
+2018-09-27 07:02:14,509 1104 INFO lotus odoo.modules.loading: loading gamification_sale_crm/data/gamification_sale_crm_data.xml
+2018-09-27 07:02:15,145 1104 INFO lotus odoo.addons.base.ir.ir_translation: module gamification_sale_crm: loading translation file (th) for language th_TH
+2018-09-27 07:02:15,145 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/gamification_sale_crm/i18n/th.po
+2018-09-27 07:02:15,545 1104 INFO lotus odoo.modules.registry: module point_of_sale: creating or updating database tables
+2018-09-27 07:02:17,564 1104 INFO lotus odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-09-27 07:02:18,504 1104 INFO lotus odoo.models: Storing computed values of pos.order fields location_id, sale_journal
+2018-09-27 07:02:18,506 1104 INFO lotus odoo.models: Storing computed values of pos.session fields cash_journal_id, cash_register_id
+2018-09-27 07:02:18,621 1104 INFO lotus odoo.modules.loading: loading point_of_sale/security/point_of_sale_security.xml
+2018-09-27 07:02:20,403 1104 INFO lotus odoo.modules.loading: loading point_of_sale/security/ir.model.access.csv
+2018-09-27 07:02:20,952 1104 INFO lotus odoo.modules.loading: loading point_of_sale/data/default_barcode_patterns.xml
+2018-09-27 07:02:20,980 1104 INFO lotus odoo.modules.loading: loading point_of_sale/wizard/pos_box.xml
+2018-09-27 07:02:21,007 1104 INFO lotus odoo.modules.loading: loading point_of_sale/wizard/pos_details.xml
+2018-09-27 07:02:21,058 1104 INFO lotus odoo.modules.loading: loading point_of_sale/wizard/pos_discount.xml
+2018-09-27 07:02:21,105 1104 INFO lotus odoo.modules.loading: loading point_of_sale/wizard/pos_open_statement.xml
+2018-09-27 07:02:21,164 1104 INFO lotus odoo.modules.loading: loading point_of_sale/wizard/pos_payment.xml
+2018-09-27 07:02:21,211 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/pos_templates.xml
+2018-09-27 07:02:21,262 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/point_of_sale_template.xml
+2018-09-27 07:02:21,516 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/point_of_sale_report.xml
+2018-09-27 07:02:21,561 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/point_of_sale_view.xml
+2018-09-27 07:02:21,634 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/pos_order_view.xml
+2018-09-27 07:02:21,978 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/product_view.xml
+2018-09-27 07:02:22,216 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/pos_category_view.xml
+2018-09-27 07:02:22,316 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/account_journal_view.xml
+2018-09-27 07:02:22,345 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/pos_config_view.xml
+2018-09-27 07:02:22,555 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/pos_session_view.xml
+2018-09-27 07:02:22,722 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/point_of_sale_sequence.xml
+2018-09-27 07:02:22,733 1104 INFO lotus odoo.modules.loading: loading point_of_sale/data/point_of_sale_data.xml
+2018-09-27 07:02:23,351 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/pos_order_report_view.xml
+2018-09-27 07:02:23,534 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/account_statement_view.xml
+2018-09-27 07:02:23,591 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/account_statement_report.xml
+2018-09-27 07:02:23,611 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/res_users_view.xml
+2018-09-27 07:02:23,869 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/res_partner_view.xml
+2018-09-27 07:02:24,049 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/res_config_view.xml
+2018-09-27 07:02:24,117 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/report_statement.xml
+2018-09-27 07:02:24,156 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/report_userlabel.xml
+2018-09-27 07:02:24,191 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/report_saledetails.xml
+2018-09-27 07:02:24,229 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/point_of_sale.xml
+2018-09-27 07:02:24,265 1104 INFO lotus odoo.modules.loading: loading point_of_sale/views/point_of_sale_dashboard.xml
+2018-09-27 07:02:24,350 1104 INFO lotus odoo.addons.base.ir.ir_translation: module point_of_sale: loading translation file (th) for language th_TH
+2018-09-27 07:02:24,351 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/point_of_sale/i18n/th.po
+2018-09-27 07:02:29,844 1104 INFO lotus odoo.modules.registry: module sale_expense: creating or updating database tables
+2018-09-27 07:02:29,959 1104 INFO lotus odoo.modules.loading: loading sale_expense/views/product_view.xml
+2018-09-27 07:02:30,162 1104 INFO lotus odoo.addons.base.ir.ir_translation: module sale_expense: no translation for language th
+2018-09-27 07:02:30,698 1104 INFO lotus odoo.modules.registry: module website_portal_sale: creating or updating database tables
+2018-09-27 07:02:31,083 1104 INFO lotus odoo.modules.loading: loading website_portal_sale/views/website_portal_sale_templates.xml
+2018-09-27 07:02:31,488 1104 INFO lotus odoo.modules.loading: loading website_portal_sale/security/ir.model.access.csv
+2018-09-27 07:02:31,725 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_portal_sale: loading translation file (th) for language th_TH
+2018-09-27 07:02:31,726 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_portal_sale/i18n/th.po
+2018-09-27 07:02:32,466 1104 INFO lotus odoo.modules.registry: module purchase_mrp: creating or updating database tables
+2018-09-27 07:02:32,649 1104 INFO lotus odoo.addons.base.ir.ir_translation: module purchase_mrp: loading translation file (th) for language th_TH
+2018-09-27 07:02:32,649 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/purchase_mrp/i18n/th.po
+2018-09-27 07:02:33,040 1104 INFO lotus odoo.modules.registry: module sale_mrp: creating or updating database tables
+2018-09-27 07:02:33,378 1104 INFO lotus odoo.modules.loading: loading sale_mrp/security/ir.model.access.csv
+2018-09-27 07:02:33,497 1104 INFO lotus odoo.addons.base.ir.ir_translation: module sale_mrp: loading translation file (th) for language th_TH
+2018-09-27 07:02:33,497 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/sale_mrp/i18n/th.po
+2018-09-27 07:02:34,048 1104 INFO lotus odoo.modules.registry: module website_sale: creating or updating database tables
+2018-09-27 07:02:35,646 1104 INFO lotus odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-09-27 07:02:35,783 1104 INFO lotus odoo.models: Storing computed values of rating.rating fields website_published
+2018-09-27 07:02:35,785 1104 INFO lotus odoo.models: Storing computed values of product.template fields rating_last_value
+2018-09-27 07:02:35,971 1104 INFO lotus odoo.modules.loading: loading website_sale/security/ir.model.access.csv
+2018-09-27 07:02:36,231 1104 INFO lotus odoo.modules.loading: loading website_sale/security/website_sale.xml
+2018-09-27 07:02:37,400 1104 INFO lotus odoo.modules.loading: loading website_sale/data/data.xml
+2018-09-27 07:02:37,488 1104 INFO lotus odoo.modules.loading: loading website_sale/data/web_planner_data.xml
+2018-09-27 07:02:37,586 1104 INFO lotus odoo.modules.loading: loading website_sale/views/views.xml
+2018-09-27 07:02:38,240 1104 INFO lotus odoo.modules.loading: loading website_sale/views/backend.xml
+2018-09-27 07:02:38,615 1104 INFO lotus odoo.modules.loading: loading website_sale/views/templates.xml
+2018-09-27 07:02:41,514 1104 INFO lotus odoo.modules.loading: loading website_sale/views/payment.xml
+2018-09-27 07:02:41,632 1104 INFO lotus odoo.modules.loading: loading website_sale/views/product_attribute_views.xml
+2018-09-27 07:02:41,768 1104 INFO lotus odoo.modules.loading: loading website_sale/views/sale_order.xml
+2018-09-27 07:02:41,996 1104 INFO lotus odoo.modules.loading: loading website_sale/views/snippets.xml
+2018-09-27 07:02:42,416 1104 INFO lotus odoo.modules.loading: loading website_sale/views/report_shop_saleorder.xml
+2018-09-27 07:02:42,663 1104 INFO lotus odoo.modules.loading: loading website_sale/views/res_config_view.xml
+2018-09-27 07:02:42,866 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_sale: loading base translation file en for language en_US
+2018-09-27 07:02:42,867 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_sale/i18n/en.po
+2018-09-27 07:02:42,945 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_sale: loading translation file (th) for language th_TH
+2018-09-27 07:02:42,946 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_sale/i18n/th.po
+2018-09-27 07:02:47,201 1104 INFO lotus odoo.modules.registry: module website_event_sale: creating or updating database tables
+2018-09-27 07:02:47,526 1104 INFO lotus odoo.modules.loading: loading website_event_sale/views/website_event_sale_templates.xml
+2018-09-27 07:02:47,895 1104 INFO lotus odoo.modules.loading: loading website_event_sale/security/ir.model.access.csv
+2018-09-27 07:02:47,955 1104 INFO lotus odoo.modules.loading: loading website_event_sale/security/website_event_sale_security.xml
+2018-09-27 07:02:48,034 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_event_sale: loading translation file (th) for language th_TH
+2018-09-27 07:02:48,035 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_event_sale/i18n/th.po
+2018-09-27 07:02:48,695 1104 INFO lotus odoo.modules.registry: module website_sale_stock: creating or updating database tables
+2018-09-27 07:02:48,870 1104 INFO lotus odoo.modules.loading: loading website_sale_stock/views/website_sale_stock_templates.xml
+2018-09-27 07:02:49,033 1104 INFO lotus odoo.addons.base.ir.ir_translation: module website_sale_stock: loading translation file (th) for language th_TH
+2018-09-27 07:02:49,033 1104 INFO lotus odoo.tools.translate: loading /opt/bitnami/apps/odoo/lib/odoo-10.0.post20170615-py2.7.egg/odoo/addons/website_sale_stock/i18n/th.po
+2018-09-27 07:02:49,150 1104 INFO lotus odoo.modules.loading: 106 modules loaded in 211.44s, 213 queries
+2018-09-27 07:02:50,529 1104 INFO lotus odoo.modules.loading: Modules loaded.
+2018-09-27 07:02:50,539 1104 INFO lotus odoo.models: Computing parent left and right for table ir_ui_menu...
+2018-09-27 07:02:50,824 1104 INFO lotus odoo.models: Computing parent left and right for table product_category...
+2018-09-27 07:02:50,828 1104 INFO lotus odoo.models: Computing parent left and right for table website_menu...
+2018-09-27 07:02:50,842 1104 INFO lotus odoo.addons.base.res.res_config: getting next operation
+2018-09-27 07:02:50,842 1104 INFO lotus odoo.addons.base.res.res_config: getting next ir.actions.todo()
+2018-09-27 07:02:50,844 1104 INFO lotus odoo.addons.base.ir.ir_http: Generating routing map
+2018-09-27 07:02:51,096 1104 INFO lotus odoo.addons.base.res.res_config: next action is ir.actions.todo(4,)
+2018-09-27 07:02:53,031 1104 INFO lotus odoo.modules.loading: loading 1 modules...
+2018-09-27 07:02:53,051 1104 INFO lotus odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries
+2018-09-27 07:02:53,191 1104 INFO lotus odoo.modules.loading: loading 106 modules...
+2018-09-27 07:02:53,368 1104 INFO lotus odoo.modules.loading: 106 modules loaded in 0.18s, 0 queries
+2018-09-27 07:02:54,249 1104 INFO lotus odoo.modules.loading: Modules loaded.
+2018-09-27 07:02:54,261 1104 INFO lotus odoo.addons.base.res.res_config: getting next operation
+2018-09-27 07:02:54,262 1104 INFO lotus odoo.addons.base.res.res_config: getting next ir.actions.todo()
+2018-09-27 07:02:54,270 1104 INFO lotus odoo.addons.base.res.res_config: next action is ir.actions.todo(1,)
+2018-09-27 07:02:55,196 1104 INFO lotus odoo.addons.base.ir.ir_http: Generating routing map
+2018-09-27 07:04:55,018 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [450, 449, 448, 447, 446, 445, 444, 443, 442, 441, 440, 439, 438, 437]
+2018-09-27 07:04:56,447 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [586, 585, 584, 583, 582, 581, 580, 579, 578, 577, 576, 575, 574, 573, 572, 571, 570, 569, 568, 567, 566, 565, 564, 563, 562, 561, 560, 559, 558, 557, 556, 555, 554, 553, 552, 551, 550, 549, 548, 547, 546, 545, 544, 543, 542, 541, 540, 539, 538, 537, 536, 535, 534, 533, 532, 531, 530, 529, 528, 527, 526]
+2018-09-27 07:04:59,288 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [511]
+2018-09-27 07:04:59,603 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [519, 518, 517, 516, 515, 514, 513, 512]
+2018-09-27 07:08:42,728 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1401]
+2018-09-27 07:08:46,700 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1402]
+2018-09-27 07:08:47,646 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1408]
+2018-09-27 07:08:48,086 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1307]
+2018-09-27 07:08:48,774 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1403]
+2018-09-27 07:08:49,449 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1404]
+2018-09-27 07:08:49,655 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1411]
+2018-09-27 07:08:49,868 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1309]
+2018-09-27 07:08:50,103 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1401]
+2018-09-27 07:08:52,934 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1406, 1405]
+2018-09-27 07:08:53,654 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1408]
+2018-09-27 07:08:54,341 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1403]
+2018-09-27 07:08:55,752 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1409]
+2018-09-27 07:08:55,971 1104 INFO lotus odoo.models.unlink: User #1 deleted ir.attachment records with IDs: [1411]
+2018-09-27 07:09:05,818 1104 INFO lotus odoo.service.db: DUMP DB: lotus format dump
+2018-09-27 07:26:47,556 1104 INFO lotus odoo.addons.mail.models.mail_mail: Mail with ID 85 and Message-Id u'<1538033203.940045118331909.765456785524514-openerp-17-res.users@debian>' successfully sent
+2018-09-27 07:26:47,563 1104 INFO lotus odoo.models.unlink: User #1 deleted mail.mail records with IDs: [85]
+2018-09-27 07:26:47,592 1104 INFO lotus odoo.models.unlink: User #1 deleted mail.message records with IDs: [864]
+2018-09-27 07:26:47,601 1104 INFO lotus odoo.addons.auth_signup.models.res_users: Password reset email sent for user <(สำเนา) thanadet.sut@gmail.com> to <thanadet.sut@gmail.com>
+2018-09-27 07:28:07,044 1104 INFO lotus odoo.modules.loading: loading 1 modules...
+2018-09-27 07:28:07,065 1104 INFO lotus odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries
+2018-09-27 07:28:07,208 1104 INFO lotus odoo.modules.loading: loading 106 modules...
+2018-09-27 07:28:07,385 1104 INFO lotus odoo.modules.loading: 106 modules loaded in 0.18s, 0 queries
+2018-09-27 07:28:08,303 1104 INFO lotus odoo.modules.loading: Modules loaded.
+2018-09-27 07:28:08,337 1104 INFO lotus odoo.addons.base.ir.ir_http: Generating routing map
